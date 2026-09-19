@@ -124,8 +124,6 @@ VITE_API_BASE_URL=http://localhost:5000/api/v1
 
 #### Prerequisites
 - Node.js (v18+)
-- PostgreSQL installed and running
-- Redis installed and running
 
 #### 1. Backend Setup
 ```bash
