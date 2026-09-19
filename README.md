@@ -57,8 +57,6 @@ Building an ATS-compliant resume often comes with painful formatting issues and 
 - **Environment:** Node.js & Express.js
 - **Language:** TypeScript
 - **Database:** Mongo DB
-- **ORM:** Prisma ORM
-- **Task Queue & Cache:** Redis + BullMQ
 - **AI Integrations:** OpenAI API / Google Gemini API
 
 ### DevOps & Infrastructure
@@ -75,12 +73,10 @@ AI-Resume-Builder/
 │   │   ├── config/          # Database, Redis, and AI client setups
 │   │   ├── controllers/     # Request handlers
 │   │   ├── middlewares/     # JWT authentication & rate limiters
-│   │   ├── prisma/          # Prisma schema & migrations
 │   │   ├── routes/          # Express API route declarations
 │   │   ├── services/        # AI orchestration & PDF generation logic
 │   │   ├── workers/         # BullMQ queue workers
 │   │   └── server.ts        # Server entry point
-│   ├── Dockerfile
 │   ├── package.json
 │   └── tsconfig.json
 ├── frontend/
@@ -92,10 +88,8 @@ AI-Resume-Builder/
 │   │   ├── services/        # Axios API instances
 │   │   ├── App.tsx
 │   │   └── main.tsx
-│   ├── Dockerfile
 │   ├── package.json
 │   └── vite.config.ts
-├── docker-compose.yml       # Full stack container configuration
 └── README.md
 ```
 
@@ -111,14 +105,6 @@ Before running the application, create `.env` files in both the `backend/` and `
 PORT=5000
 NODE_ENV=development
 CLIENT_URL=http://localhost:3000
-
-# PostgreSQL (Prisma)
-DATABASE_URL="postgresql://postgres:postgrespassword@localhost:5432/resume_builder?schema=public"
-
-# Redis Cache & Queue
-REDIS_HOST=localhost
-REDIS_PORT=6379
-REDIS_URL="redis://localhost:6379"
 
 # Authentication
 JWT_SECRET=your_super_secret_jwt_key_here
@@ -148,9 +134,6 @@ cd backend
 
 # Install dependencies
 npm install
-
-# Run database migrations
-npx prisma migrate dev --name init
 
 # Start development server and background workers
 npm run dev
