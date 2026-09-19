@@ -75,7 +75,6 @@ AI-Resume-Builder/
 │   │   ├── middlewares/     # JWT authentication & rate limiters
 │   │   ├── routes/          # Express API route declarations
 │   │   ├── services/        # AI orchestration & PDF generation logic
-│   │   ├── workers/         # BullMQ queue workers
 │   │   └── server.ts        # Server entry point
 │   ├── package.json
 │   └── tsconfig.json
