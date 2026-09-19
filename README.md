@@ -56,7 +56,7 @@ Building an ATS-compliant resume often comes with painful formatting issues and 
 ### Backend
 - **Environment:** Node.js & Express.js
 - **Language:** TypeScript
-- **Database:** PostgreSQL
+- **Database:** Mongo DB
 - **ORM:** Prisma ORM
 - **Task Queue & Cache:** Redis + BullMQ
 - **AI Integrations:** OpenAI API / Google Gemini API
