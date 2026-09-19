@@ -62,7 +62,6 @@ Building an ATS-compliant resume often comes with painful formatting issues and 
 - **AI Integrations:** OpenAI API / Google Gemini API
 
 ### DevOps & Infrastructure
-- **Containers:** Docker & Docker Compose
 - **Version Control:** Git & GitHub
 
 ---
