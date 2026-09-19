@@ -156,7 +156,6 @@ npm run dev
 3. **AI Enhancement:**
    - Write a draft bullet point (e.g., *"fixed bug in payment gateway"*).
    - Click **Enhance with AI**.
-   - The BullMQ worker processes the text and suggests an action-driven bullet point (e.g., *"Resolved race condition in payment checkout pipeline, reducing drop-off rates by 14%"*).
 4. **Inspect Live Preview:** Review spacing, typography, and section alignment dynamically on the right-hand panel.
 5. **Download:** Click **Export PDF** to generate the document.
 
