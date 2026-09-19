@@ -224,46 +224,6 @@ All endpoints below require header: `Authorization: Bearer <token>`
 | `DELETE` | `/resumes/:id` | Remove a resume entry |
 
 ---
-
-### AI Enhancement & Task Processing
-
-#### Request AI Bullet Rewrite
-```http
-POST /ai/enhance
-Authorization: Bearer <token>
-```
-**Request Body:**
-```json
-{
-  "section": "experience",
-  "rawText": "Worked on database speed and made queries run faster",
-  "jobTitle": "Backend Engineer"
-}
-```
-**Response (202 Accepted):**
-```json
-{
-  "jobId": "bullmq-job-892134",
-  "status": "queued"
-}
-```
-
-#### Check Task Status
-```http
-GET /jobs/:jobId
-Authorization: Bearer <token>
-```
-**Response (200 OK):**
-```json
-{
-  "jobId": "bullmq-job-892134",
-  "status": "completed",
-  "result": "Optimized PostgreSQL indexing strategies and query execution plans, decreasing average API read latency by 35%."
-}
-```
-
----
-
 ## 🔮 Future Enhancements
 
 - [ ] **Job Description Match Score:** Add ATS keyword analysis comparing resume content directly against uploaded job descriptions.
